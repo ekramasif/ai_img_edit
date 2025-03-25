@@ -27,7 +27,7 @@ export function ImageResultDisplay({
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = imageUrl;
-    link.download = `edited-by-ishat${Date.now()}.png`;
+    link.download = `dendritesoft${Date.now()}.png`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -90,7 +90,7 @@ export function ImageResultDisplay({
                     item.role === "user" ? "text-foreground" : "text-primary"
                   }`}
                 >
-                  {item.role === "user" ? "You" : "Ishat"}
+                  {item.role === "user" ? "You" : "DendriteSoft"}
                 </p>
                 <div className="space-y-2">
                   {item.parts.map((part: HistoryPart, partIndex) => (
